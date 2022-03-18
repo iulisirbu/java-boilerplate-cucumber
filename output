@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.101">
+    <testcase classname="asd" name="asd" time="2.634">
+        <system-out>
+            <![CDATA[* var test="test"...........................................................passed
+* [Gorest] Get all users and compare response with {"status": 200}..........passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="CUtilsConsole" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%d{HH:mm:ss} [%t] %highlight{%-5level %logger{36}} - %highlight{%msg}{DEBUG=x, INFO=x}%n"/>
+        </Console>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%highlight{%d{HH:mm:ss} [%t]} %highlight{%msg}{DEBUG=x, INFO=x}%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <root level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </root>
+        <logger name="com.cucumber.utils" level="info" additivity="false">
+            <AppenderRef ref="CUtilsConsole"/>
+        </logger>
+        <logger name="com.cucumber.utils.context.vars" level="error" additivity="false">
+            <AppenderRef ref="CUtilsConsole"/>
+        </logger>
+    </Loggers>
+</Configuration>
